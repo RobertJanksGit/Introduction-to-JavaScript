@@ -210,12 +210,13 @@ console.log(gradeCalculator(89))
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
+
 function vowelCounter (someStr) {
     const vowelList = "aeiouAEIOU";
     let vowelCount = 0;
     
     for (let i = 0; i < someStr.length; i++) {
-        if (vowelList.indexOf(someStr[i]) !== -1) {
+        if (vowelList.includes(someStr[i])) {
             vowelCount += 1;
         }
     }
